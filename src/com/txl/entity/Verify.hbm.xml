@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.txl.entity">
+    <class name="Verify" table="verify">
+        <id name="id" column="id" type="int">
+            <generator class="identity"/>
+        </id>
+        <property name="classid" column="classid" type="int"/>
+        <many-to-one name="user" column="userid" class="User" lazy="false"/>
+        <property name="word" column="word" type="string"/>
+    </class>
+    
+</hibernate-mapping>

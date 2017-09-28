@@ -1,0 +1,66 @@
+.main
+{
+	width:1100px; height:630px; background-image:url(../img/bground2.png);
+	margin:0px auto;
+	-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+box-shadow: 10px 10px 5px #888888;	border-radius:30px;
+-moz-border-radius:30px; position:relative;
+}
+.img{ position:relative; 
+
+width:400px; height:400px; left:50px; top:50px; float:left; 
+	}
+.img img{ 
+width:400px; height:400px;
+border-radius:20px;
+-moz-border-radius:30px; }
+.information
+{ left:100px; top:50px;position:relative; float:left; 
+  width:300px; height:200px;
+  font-size:18px; font-family:微软雅黑;
+  filter: alpha(opacity=70); opacity: 0.7; 
+  color:#999; 
+  cursor:pointer;
+  -moz-transition:all .5s ease-in; 
+    -webkit-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    -ms-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+	line-height:35px;
+}
+.information:hover
+{
+     filter:alpha(opacity=100);
+	 opacity: 1;
+	 color:#333; 
+}
+a
+{
+	text-decoration:none; font-size:18px; color:#000;
+}
+a:hover
+{
+    color:#FFF;
+}
+.liuyan{ width:350px; height:200px;float:left; left:-200px; top:250px; position:relative;
+ }
+ .text{
+	 width:350px; height:150px; background-color:transparent;    border:#B2C55A dotted 5px; font-size:24px; color:#999; font-weight:900;
+	 }
+.butten
+{
+	width:85px; height:40px;
+	border-radius:10px;
+    -moz-border-radius:10px;
+	background-color:#91B751;
+	opacity: 0.5;
+	color:#666;
+	font-size:18px; font-family:'微软雅黑';
+}
+.butten:hover
+{
+	 filter:alpha(opacity=100);
+	 opacity: 0.7;
+	 color:#FFF; 
+}
+

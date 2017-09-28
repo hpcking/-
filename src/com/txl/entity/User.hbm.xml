@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.txl.entity">
+    <class name="User" table="user">
+        <id name="userid" column="userid" type="int">
+            <generator class="identity"/>
+        </id>
+        <property name="username" column="username" type="string" length="20"/>
+        <property name="password" column="password" type="string" length="32"/>
+        <property name="sex" column="sex" type="string" length="2"/>
+        <property name="qq" column="qq" type="string" length="32"/>
+        <property name="phone" column="phone" type="string" length="32"/>
+        <property name="image" column="image" type="string" length="100"/>
+        <property name="motto" column="motto" type="string" length="64"/>
+        <set name="school" table="user_school" lazy="false" inverse="false">
+            <key column="userid"></key>
+            <many-to-many class="School" column="schoolid"></many-to-many>
+        </set>
+    </class>  
+</hibernate-mapping>

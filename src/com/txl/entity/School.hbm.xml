@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.txl.entity">
+    
+    <class name="School" table="school">
+        <id name="schoolid" column="schoolid" type="int">
+            <generator class="identity"/>
+        </id>
+        <property name="schoolname" column="schoolname" type="string" length="32"/>
+        <property name="userid" column="userid" type="int"/>
+        <property name="image" column="image" type="string" length="32"/>
+        <property name="motto" column="motto" type="string" length="32"/>
+        <set name="user" table="user_school" lazy="false">
+            <key column="schoolid"></key>
+            <many-to-many class="User" column="userid"></many-to-many>
+        </set>
+    </class>  
+</hibernate-mapping>

@@ -1,0 +1,114 @@
+.main
+{
+	width:1100px; height:630px; background-image:url(../img/bground2.png);
+	margin:0px auto;
+	-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+box-shadow: 10px 10px 5px #888888;	border-radius:30px;
+-moz-border-radius:30px; position:relative;
+}
+a
+{
+	text-decoration:none; font-size:18px; color:#000;
+}
+a:hover
+{
+    color:#FFF;
+}
+.banji
+{	
+	width:1000px; height:auto;  float:left; position:relative;
+	color:#999;
+	}
+.banji2{
+	top:120px; position:relative;
+	width:1000px; height:auto; float:left;
+	color:#999;}
+.bjbiao
+{ 
+width:1000px; height:30px; position:relative; float:left; font-size:26px;
+color:#999;
+ filter: alpha(opacity=50);
+     cursor:pointer;
+	 -moz-transition:all .5s ease-in; 
+    -webkit-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    -ms-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+	line-height:20px;
+}
+hr{ background-color:#8FB654; height:2px;}
+.bjbiao:hover
+{ color:#000;
+
+}
+.banjiming
+{
+	width:980px; height:250px; padding:10px 10px; float:left;
+	}
+.item
+{ width:auto; height:20px;background-color:#91B751;
+     float:left;
+	opacity: 0.5;
+	border-radius:20px;
+    -moz-border-radius:30px; padding:10px 10px; margin:5px 5px; font-size:16px; font-family:微软雅黑;
+	filter: alpha(opacity=50);
+    cursor:pointer;
+	 -moz-transition:all .5s ease-in; 
+    -webkit-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    -ms-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+	line-height:20px;
+	}
+.item:hover
+{
+	filter:alpha(opacity=100);
+	 opacity: 0.7;
+	 color:#FFF; 
+}	
+.banjijiyu{ 
+top:420px;position:relative;
+width:1000px; height:auto; float:left;
+background-color:#91B751;
+     float:left;
+	opacity: 0.5;
+	border-radius:20px;
+    -moz-border-radius:30px; padding:10px 10px; margin:5px 5px; font-size:16px; font-family:微软雅黑;
+	filter: alpha(opacity=50);
+    cursor:pointer;
+	 -moz-transition:all .5s ease-in; 
+    -webkit-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    -ms-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+	line-height:20px;
+}
+.banjijiyu:hover
+{
+	filter:alpha(opacity=100);
+	 opacity: 0.7;
+	 color:#FFF; 
+}	
+.jiaose
+{ top:50px; right:100px; float:left;
+  
+  width:auto; height:20px;background-color:#91B751;
+     float:left;
+	opacity: 0.5;
+	border-radius:20px;
+    -moz-border-radius:30px; padding:10px 10px; margin:5px 5px; font-size:16px; font-family:微软雅黑;
+	filter: alpha(opacity=50);
+    cursor:pointer;
+	 -moz-transition:all .5s ease-in; 
+    -webkit-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    -ms-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+	line-height:20px;
+}
+.jiaose:hover
+{
+	filter:alpha(opacity=100);
+	 opacity: 0.7;
+	 color:#FFF; 
+}

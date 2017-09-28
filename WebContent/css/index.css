@@ -1,0 +1,85 @@
+.index
+{
+width:1180px; height:500px; position:absolute; z-index:1;
+-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+box-shadow: 10px 10px 5px #888888;	border-radius:30px;
+-moz-border-radius:30px; margin-top:50px; margin-left:auto;
+margin-right:auto;
+}
+.login
+{
+width:300px; height:300px; position:absolute; left:200px; top:100px; background-color:#000; z-index:2;
+ 
+	border-radius:30px;
+    -moz-border-radius:30px; padding:20px 20px; font-size:18px; font-family:微软雅黑;
+	filter: alpha(opacity=50); opacity: 0.5; 
+	color:#03F; 
+	cursor:pointer;
+	 -moz-transition:all .5s ease-in; 
+    -webkit-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    -ms-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+	line-height:35px;
+}
+.login:hover
+{
+	 filter:alpha(opacity=100);
+	 opacity: 0.7;
+	 color:#FFF; 
+}
+.xiang
+{
+	width:300px; height:50px; font:20px;
+}
+.butten
+{
+	width:75px; height:50px;
+	border-radius:5px;
+    -moz-border-radius:30px;
+	background-color:#666;
+	opacity: 0.5;
+	font-size:18px; font-family:'微软雅黑';
+}
+.butten:hover
+{
+	 filter:alpha(opacity=100);
+	 opacity: 0.7;
+	 color:#FFF; 
+}
+.zhuce
+{
+	position:absolute; top:50px; left:850px; 
+	width:100px; height:40px;background-color:#000; z-index:2;
+	opacity: 0.5;
+	border-radius:20px;
+    -moz-border-radius:30px; padding:20px 20px; font-size:18px; font-family:微软雅黑;
+	filter: alpha(opacity=50);
+    cursor:pointer;
+	 -moz-transition:all .5s ease-in; 
+    -webkit-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    -ms-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+	line-height:35px;
+}
+.zhuce:hover
+{
+	filter:alpha(opacity=100);
+	 opacity: 0.7;
+	 color:#FFF; 
+	}
+.zhuce a
+{
+	text-decoration:none; font-size:36px; color:#03F;
+}
+.zhuce a:hover
+{
+    color:#FFF;
+}
+.biao
+{ 
+ width:300px; height:50px;
+ font-size:36px; line-height:70px; margin:0 auto;
+}
+hr{ width:280px; height:2px; background-color:#FFF;}

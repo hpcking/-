@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="user" namespace="/user" extends="one">
+	    
+	    
+		<!-- LoginAction -->
+		<action name="LoginAction_*" class="loginAction" method="{1}">
+		    <result name="index" type="redirect">UserAction_index.do</result>
+		    <result name="input">/index.jsp</result>
+		</action>
+		<!-- UserAction -->
+		<action name="UserAction_*" class="userAction" method="{1}">
+		    <!--重置fileupload-->
+		    <interceptor-ref name="fileUpload">
+		        <param name="maximumSize">5242880</param>
+		        <param name="allowedExtension">jpg,jpeg,gif,png</param>
+		    </interceptor-ref>
+		    <interceptor-ref name="defaultStack"></interceptor-ref>			
+		    <result name="index" >/main.jsp</result>
+		    <result name="login" >/</result>
+		    <result name="add">/register.jsp</result>
+		    <result name="redirectAction" type="redirectAction">/user/UserAction_index.do</result>
+		    <result name="edit">/Modify.jsp</result>
+		    <result name="logout">/</result>
+		    <result name="input">/register.jsp</result>
+		</action>
+		<action name="SchoolAction_*" class="schoolAction" method="{1}">
+		    <result name="create">/createschool.jsp</result>
+		    <result name="redirectAction" type="redirectAction">/user/UserAction_index.do</result>
+		    <result name="student">/student.jsp</result>
+		    <result name="seekschool">/seekschool.jsp</result>
+		    <result name="verify">/verify.jsp</result>
+		    <result name="specificstudent">/specificstudent.jsp</result>		    
+		    <result name="role">/role.jsp</result>
+		    <result name="rerole" type="chain">SchoolAction_role</result>		    
+		    <result name="input">/createschool.jsp</result>
+		    <result name="motto">/schoolmotto.jsp</result>
+		</action>
+		<action name="EvaluateAction_*" class="evaluateAction" method="{1}">
+		    <result name="evaluate" type="redirectAction">/user/SchoolAction_student.do</result>
+		</action>
+		<action name="VerifyAction_*" class="verifyAction" method="{1}">
+		    <result name="verify" type="redirectAction">/user/UserAction_index.do</result>
+		</action>
+	</package>
+	
+	
+
+</struts>

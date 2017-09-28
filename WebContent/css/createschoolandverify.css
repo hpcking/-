@@ -1,0 +1,50 @@
+.main
+{
+	width:400px; height:350px; background-image:url(../img/bground2.png);
+	margin:0px auto;
+	-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+box-shadow: 10px 10px 5px #888888;	border-radius:30px;
+-moz-border-radius:30px; position:relative;
+font-size:26px;
+color:#999;
+ filter: alpha(opacity=50);
+     cursor:pointer;
+	 -moz-transition:all .5s ease-in; 
+    -webkit-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    -ms-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+	line-height:20px;
+}
+.main:hover
+{ color:#000;}
+.mainzhong{ width:350px; height:auto; left:25px; top:25px;position:relative;}
+.liuyan{ width:350px; height:200px; float:left; position:relative;
+ }
+ .text{
+	 float:left;position:relative; width:338px; height:150px; background-color:transparent;    border:#B2C55A dotted 5px; font-size:24px; color:#999; font-weight:900;
+	 }
+.butten
+{
+	width:85px; height:40px;
+	border-radius:10px;
+    -moz-border-radius:10px;
+	background-color:#91B751;
+	opacity: 0.5;
+	color:#666;
+	font-size:18px; font-family:'微软雅黑';
+}
+.butten:hover
+{
+	 filter:alpha(opacity=100);
+	 opacity: 0.7;
+	 color:#FFF; 
+}
+.banjiming
+{
+	width:350px; height:200px; margin:0px auto; 
+}
+.input
+{ width:240px;
+ background-color:transparent;    border: dashed #94B663 2px; font-size:18px; color:#91B751;
+}
